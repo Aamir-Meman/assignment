@@ -1,0 +1,28 @@
+[
+    {
+        "JEShortName": "Support and Maintain P&S Systems",
+        "JEShortNarrative": "Responsible for maintaining and supporting Procurement and Sourcing systems (i.e.: Ariba, SRM).",
+        "JEUserNarrative": "",
+        "currentReleaseStatus": "Active",
+        "deleted": {
+            "YNCode": 2,
+            "name": "No"
+        },
+        "domainCode": {
+            "abbreviation": "S-P&S",
+            "domainCode": 32,
+            "name": "Supply - Proc. & Sourcing"
+        },
+        "jeSapId": "10000331",
+        "jobElementPK": 342,
+        "name": "Support and Maintain P&S Systems",
+        "requestable": {
+            "YNCode": 1,
+            "name": "Yes"
+        },
+        "subdomainCode": {
+            "name": "Procurement & Sourcing",
+            "subdomainCode": 8
+        }
+    }
+]

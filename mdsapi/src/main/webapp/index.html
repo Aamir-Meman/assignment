@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/components/transition.min.css">
+
+
+
+
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.js"></script>
+<script
+	src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/components/transition.min.js'>
+	
+</script>
+
+
+<script>
+	$(document).ready(function() {
+		 $('.ui.search')
+		  .search({
+		    type          : 'category',
+		    minCharacters : 3,
+		    apiSettings   : {
+		      onResponse: function(gaResponse) {
+		        var
+		          response = {
+		            results : {}
+		          }
+		        ;
+		        $.each(gaResponse.results, function(index, item) {
+		          var
+		            language   = item.language || 'Unknown',
+		            maxResults = 8
+		          ;
+		          if(index >= maxResults) {
+		            return false;
+		          }
+		          // create new language category
+		          if(response.results[language] === undefined) {
+		            response.results[language] = {
+		              name    : language,
+		              results : []
+		            };
+		          }
+		          // add result to category
+		          response.results[language].results.push({
+		            title       : item,
+		          });
+		        });
+		        return response;
+		      },
+		      url: 'webresources/mdsselect/{query}'
+		    }
+		  }); 
+		
+
+	});
+</script>
+</head>
+<body>
+   <h2>Example 2 of Showing Autocomplete</h2>
+   <p>Type minimum 3 characters in the textbox</p>
+	<div class="ui search">
+		<div class="ui icon input">
+			<input class="prompt" type="text" placeholder="Search..."> <i
+				class="search icon"></i>
+
+		</div>
+		<div class="results"></div>
+	</div>
+</body>
+</html>

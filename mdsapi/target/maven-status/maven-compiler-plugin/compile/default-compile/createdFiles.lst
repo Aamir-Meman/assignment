@@ -1,0 +1,7 @@
+com/mds/bean/ListStrings.class
+com/mds/bean/MdsSelectBean.class
+com/mds/handler/MdsSelectQuery$1.class
+com/mds/endpoint/Mdsselect.class
+com/mds/endpoint/ApplicationConfig.class
+com/mds/handler/MdsSelectQuery.class
+com/mds/endpoint/MdsAdd.class

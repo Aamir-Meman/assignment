@@ -1,0 +1,65 @@
+{
+    "approver1Comments": "1 yr approval",
+    "approver1DecisionDate": "2017-06-18",
+    "approver1DecisionStatus": "Approved",
+    "approver1EffDate": "2017-06-18",
+    "approver1ExpDate": "2018-06-18",
+    "approver1GIN": "05854518",
+    "businessReason": "Test 0",
+    "exceptAoRList": [
+    ],
+    "exceptJEList": [
+        {
+            "JEEndDate": "2018-07-19",
+            "JEStartDate": "2017-07-01",
+            "JEStatus": "Active",
+            "exceptJEPK": 1,
+            "exceptSAPID": "10000061",
+            "jobElementFK": 65,
+            "positionFK": {
+                "firstName": "Reginald",
+                "fullName": "Reginald Stanfield",
+                "gin": "03668720",
+                "jobFK": "82120309",
+                "lastAccessedDate": "2017-07-03",
+                "lastName": "Stanfield",
+                "positionPK": 1
+            },
+            "requestTrackerFK": {
+                "approver1Comments": "1 yr approval",
+                "approver1DecisionDate": "2017-06-18",
+                "approver1DecisionStatus": "Approved",
+                "approver1EffDate": "2017-06-18",
+                "approver1ExpDate": "2018-06-18",
+                "approver1GIN": "05854518",
+                "businessReason": "Test 0",
+                "jobElementFK": 65,
+                "requestTrackerDate": "2017-07-03",
+                "requestTrackerPK": 1,
+                "requestedByGIN": "03668720",
+                "requestorGIN": "03668720",
+                "securityComments": "approved for 1 yr.",
+                "securityDecisionDate": "2017-07-01",
+                "securityDecisionStatus": "Approved",
+                "securityEffDate": "2017-07-01",
+                "securityExpDate": "2018-06-18",
+                "securityGIN": "12345678"
+            }
+        }
+    ],
+    "jobElementFK": 65,
+    "removalAoRList": [
+    ],
+    "removalJEList": [
+    ],
+    "requestTrackerDate": "2017-07-03",
+    "requestTrackerPK": 1,
+    "requestedByGIN": "03668720",
+    "requestorGIN": "03668720",
+    "securityComments": "approved for 1 yr.",
+    "securityDecisionDate": "2017-07-01",
+    "securityDecisionStatus": "Approved",
+    "securityEffDate": "2017-07-01",
+    "securityExpDate": "2018-06-18",
+    "securityGIN": "12345678"
+}
